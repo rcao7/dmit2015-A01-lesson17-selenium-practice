@@ -14,6 +14,7 @@ public class SeleniumWebDriverHtmlFormDemo01 {
 //        WebDriver driver = new FirefoxDriver();
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
+
         driver.manage().window().maximize();
         driver.get("https://www.w3schools.com/html/html_forms.asp");
         WebElement firstNameField = driver.findElement(By.id("fname"));
